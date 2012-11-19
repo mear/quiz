@@ -1,0 +1,25 @@
+INSTRUKCJA!!
+
+Drogie medyki,
+
+zeby program dzialal potrzebne sa wszystkie pliki z tego folderu. Lista kontrolna:
+
+- data.xls
+- quiz.py
+- quiz.bat
+- !INSTRUKCJA.txt
+
+Pytania wklejamy sobie to akrusza data.xls. Kolejne pytania, zagadnienia w kolejnych wierszach kolumny A.
+Po wklejeniu zapisujemy akrusz i zamykamy excela.
+
+Klikamy quiz.bat
+
+Program zaczyna zadawac pytania. Po ka¿dym pytaniu trzeba wcisn¹æ:
+
+t- znaczy " Umiem to zagadnienie, wywal z listy"
+
+n- znaczy "niestaty nie umiem i chce do niego wróciæ póŸniej.
+
+Kiedy wszystkie pytania dostan¹ t program siê zakoñczy.
+
+Wczêœniejsze wy³¹czanie przez CTRL + C
