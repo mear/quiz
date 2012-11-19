@@ -54,8 +54,7 @@ class quiz:
             #fili=random.choice(listi)
             random.shuffle(listi)
             fili=listi[0]
-            im=Image.open(fili)
-            im.show() 
+            p=subprocess.Popen(['display',fili])
             odp2=raw_input("Umiesz odpowiedziec (t/n): ")
             if odp2 == "t":
                 print "miodzio \n"
@@ -66,6 +65,7 @@ class quiz:
                 print fili
             else:
                 print "mialo byc n albo t! BRZYDKO"
+            p.kill()
         os.chdir(diri)
         
    
