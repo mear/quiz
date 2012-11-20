@@ -25,10 +25,10 @@ class Window(QtGui.QWidget):
 
 
     def handleButtonY(self):
-        app.exit(0)
+        app.exit(1)
 
     def handleButtonN(self):
-        app.exit(1)
+        app.exit(2)
 
 if __name__ == '__main__':
 
