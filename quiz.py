@@ -13,6 +13,7 @@ import subprocess
 class quiz:
     def __init__(self,nazwa="Quiz 1"):
         self.nazwa_quizu=nazwa
+        self.dialog = os.path.abspath('qtdialog.py')
         self.Lq=[]
 
     def view(self):
@@ -54,18 +55,19 @@ class quiz:
             #fili=random.choice(listi)
             random.shuffle(listi)
             fili=listi[0]
-            p=subprocess.Popen(['display',fili])
-            odp2=raw_input("Umiesz odpowiedziec (t/n): ")
-            if odp2 == "t":
+            p=subprocess.Popen(['python',self.dialog,fili])
+            print("Umiesz odpowiedziec (t/n): ")
+            odp2 = p.wait()
+            if odp2 == 1:
                 print "miodzio \n"
                 print fili
                 del listi[0]
-            elif odp2 == "n":
+            elif odp2 ==2:
                 print ";("
                 print fili
             else:
-                print "mialo byc n albo t! BRZYDKO"
-            p.kill()
+                exit()
+
         os.chdir(diri)
         
    
